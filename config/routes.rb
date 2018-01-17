@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'friendships/destroy'
+
+  get 'friendships_controller/destroy'
+
   get 'users/index'
 
   devise_for :users, :controllers => { :registrations => "user/registrations"}
